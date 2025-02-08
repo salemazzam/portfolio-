@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header, section, footer {
+    padding: 40px 20px;
+    background: white;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+h1, h2, h3 {
+    color: #007acc;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background: linear-gradient(135deg, #007acc, #005f99);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-buttons .btn:hover {
+    background: linear-gradient(135deg, #005f99, #003f66);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills, ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, ul li {
+    background: #007acc;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.skills li:hover, ul li:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+footer {
+    background: #007acc;
+    color: white;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    header, section, footer {
+        padding: 20px;
+    }
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 4px solid #007acc;
+    transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+    transform: rotate(360deg);
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.project {
+    background: #e9f5ff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
